@@ -1,3 +1,5 @@
 laravel-test/vendor
 laravel-test/package.json
-vue-temp/package.json
+vue-test/package.json
+webpack-test/build.js
+webpack-test/node_modules
