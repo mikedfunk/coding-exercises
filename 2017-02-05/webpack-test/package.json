@@ -10,10 +10,5 @@
     "build": "webpack",
     "dev": "webpack --watch",
     "prod": "webpack -p"
-  },
-  "babel": {
-    "presets": [
-      ["es2015", { "modules": false }]
-    ]
   }
 }
