@@ -8,6 +8,7 @@
     "extract-text-webpack-plugin": "2.0.0-rc3",
     "node-sass": "^4.5.0",
     "sass-loader": "^5.0.1",
+    "serve": "^3.2.10",
     "style-loader": "^0.13.1",
     "webpack": "^2.2.1"
   }

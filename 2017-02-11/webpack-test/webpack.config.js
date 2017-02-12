@@ -2,12 +2,13 @@
 'use strict';
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require('path');
 
 module.exports = {
-  entry: './app.js',
+  entry: path.join(__dirname, 'app'),
   output: {
     filename: '[name].js',
-    path: __dirname + '/build',
+    path: path.join(__dirname, 'build'),
   },
   module: {
     rules: [

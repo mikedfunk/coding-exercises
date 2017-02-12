@@ -3,7 +3,7 @@
 'use strict';
 
 // in this file you can append custom step methods to 'I' object
-module.exports = function () {
+module.exports = function exports() {
   return actor({
     amOnTheHomePage() {
       this.amOnPage('/');

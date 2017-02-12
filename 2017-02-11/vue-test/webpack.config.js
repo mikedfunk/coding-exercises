@@ -1,10 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/main.js',
+  entry: path.join(__dirname, 'src/main'),
   output: {
     filename: '[name].js',
-    path: path.join(__dirname, '/build'),
+    path: path.join(__dirname, 'build'),
   },
   module: {
     rules: [
@@ -21,7 +21,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'vue$': 'vue/dist/vue.common.js'
+      vue$: 'vue/dist/vue.common.js',
     },
   },
 };
