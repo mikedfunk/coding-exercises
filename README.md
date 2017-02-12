@@ -3,13 +3,26 @@ Some simple exercises to remember how to do each of these things. I copy-paste t
 1. [ ] create a laravel app with composer and serve it.
 7. [ ] Open the tag selector in a tab 5x, in a split 5x, in a vsplit 5x
 2. [ ] create a codeceptjs test suite with nightmarejs.
-3. [ ] create a user migration, model, controller, view, seed, and practice creating a fake user with faker and tinker
+3. [ ] create a tasks migration, model, controller, view, seed, and practice creating a fake user with faker and tinker
 4. [ ] Create a docker-compose setup that runs nginx and php-fpm and serves a mounted directory and run it
-5. [ ] Create a hello world js app with a webpack 2 config that compiles js modules and es2015 through babel
-5. [ ] Create a vuejs app from scratch with vue-loader and serve it
+5. [ ] Create a hello world js app with a webpack 2 config that:
+ 1. [ ] loads js modules and es2015 through babel
+ 1. [ ] loads scss through webpack js
+1. [ ] Create a react app from scratch (with .jsx and `react` preset) and serve it
+5. [ ] Create a vuejs app from scratch (with .vue and `vue-loader`) and serve it
 6. [ ] Use fugitive.vim to add, commit, and push a file change. Also git pull and git status.
 
 ## Subtasks to try later
+
+### Docker
+
+1. [ ] Add a mysql server container to the compose file. connect to the db with pdo in the example file.
+2. [ ] Add a (scheduled) tasks box that runs php
+3. [ ] Add a jobs box that runs rabbitmq
+
+### Webpack
+
+1. [ ] compiles scss to file using `extract-text-webpack-plugin`
 
 ### Laravel
 
@@ -34,7 +47,15 @@ Some simple exercises to remember how to do each of these things. I copy-paste t
  1. [ ] bind a model to a route
  1. [ ] throttle a route
 
-### codeceptjs
+### Codeceptjs
 
  1. [ ] prefix a test by creating a row in the db
  2. [ ] remove the row from the db when done
+
+ ### React/Redux/Vue/Webpack
+
+ 1. [ ] Create a simple redux/react app
+ 1. [ ] Hook up redux and vuejs
+ 1. [ ] Use vuex with vue app
+ 1. [ ] Use vue-route with vue app
+ 1. [ ] Set up webpack-dev-server to serve js/css
