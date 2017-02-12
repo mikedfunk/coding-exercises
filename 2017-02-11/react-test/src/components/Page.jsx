@@ -1,5 +1,7 @@
 import React from 'react';
 
-export default (
-  <h1>Hello World!</h1>
-);
+export default function Page(props) {
+    return (
+        <h1>Hello World!</h1>
+    );
+};
