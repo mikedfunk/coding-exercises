@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "css-loader": "^0.26.1",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^5.0.1",
+    "vue": "^2.1.10",
+    "vue-loader": "^10.3.0",
+    "vue-style-loader": "^2.0.0",
+    "vue-template-compiler": "^2.1.10",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --open --hot --inline",
+    "prod": "webpack -p --env.production"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "extends": ["vue"],
+  "plugins": ["vue"],
+  "rules": {
+    "vue/jsx-uses-vars": 2,
+    "comma-dangle": 0,
+    "semi": 0
+  }
+}

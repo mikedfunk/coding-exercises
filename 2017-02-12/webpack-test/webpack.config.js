@@ -8,7 +8,7 @@ const extractSassLoader = ExtractTextPlugin.extract({
 });
 const sassLoader = 'style-loader!css-loader!sass-loader';
 
-module.exports = function(env) {
+module.exports = function exp(env) {
   const isProd = env && env.production;
   let exportme = {
     entry: path.join(__dirname, 'app'),
@@ -22,6 +22,7 @@ module.exports = function(env) {
         {
           test: /\.js$/,
           loader: 'babel-loader',
+          exclude: /node_modules/,
           query: {
             presets: [
               ['es2015', { modules: false }],
@@ -39,4 +40,4 @@ module.exports = function(env) {
     exportme.plugins = [new ExtractTextPlugin('[name].css?[hash]')];
   }
   return exportme;
-}
+};
