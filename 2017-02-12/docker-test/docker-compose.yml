@@ -1,0 +1,30 @@
+version: "2"
+services:
+  nginx:
+    image: nginx
+    volumes:
+      - ./code:/code
+      - ./site.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "80:80"
+  php:
+    build:
+      context: ./php
+      dockerfile: Dockerfile
+      # args:
+      #   MYSQL_DATABASE: 'test'
+      #   MYSQL_ROOT_PASSWORD: 'mypass'
+    volumes:
+      - ./code:/code
+  mysql:
+    image: mysql
+    # build:
+    #   context: ./mysql
+      # dockerfile: Dockerfile
+    volumes:
+      - ./mysql/db_dump.sql:/docker-entrypoint-initdb.d/db_dump.sql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: 'test'
+      MYSQL_ROOT_PASSWORD: 'mypass'
