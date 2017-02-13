@@ -11,7 +11,7 @@ const sassLoader = 'style-loader!css-loader!sass-loader';
 module.exports = function exp(env) {
   const isProd = env && env.production;
   let exportme = {
-    entry: path.join(__dirname, 'app'),
+    entry: ['babel-polyfill', './app'],
     output: {
       filename: '[name].js?[hash]',
       path: path.join(__dirname, 'build'),
@@ -21,13 +21,14 @@ module.exports = function exp(env) {
       rules: [
         {
           test: /\.js$/,
+          loader: 'eslint-loader',
+          exclude: /node_modules/,
+          enforce: 'pre',
+        },
+        {
+          test: /\.js$/,
           loader: 'babel-loader',
           exclude: /node_modules/,
-          query: {
-            presets: [
-              ['es2015', { modules: false }],
-            ],
-          },
         },
         {
           test: /\.scss$/,
@@ -38,6 +39,8 @@ module.exports = function exp(env) {
   };
   if (isProd) {
     exportme.plugins = [new ExtractTextPlugin('[name].css?[hash]')];
+  } else {
+    exportme.devtool = 'cheap-eval-source-map';
   }
   return exportme;
 };
