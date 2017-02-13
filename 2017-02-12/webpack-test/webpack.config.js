@@ -21,12 +21,6 @@ module.exports = function exp(env) {
       rules: [
         {
           test: /\.js$/,
-          loader: 'eslint-loader',
-          exclude: /node_modules/,
-          enforce: 'pre',
-        },
-        {
-          test: /\.js$/,
           loader: 'babel-loader',
           exclude: /node_modules/,
         },
@@ -41,6 +35,12 @@ module.exports = function exp(env) {
     exportme.plugins = [new ExtractTextPlugin('[name].css?[hash]')];
   } else {
     exportme.devtool = 'cheap-eval-source-map';
+    exportme.module.rules.push({
+      test: /\.js$/,
+      loader: 'eslint-loader',
+      exclude: /node_modules/,
+      enforce: 'pre',
+    });
   }
   return exportme;
 };
