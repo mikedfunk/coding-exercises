@@ -22,18 +22,18 @@ Some simple exercises to remember how to do each of these things. I copy-paste t
 
 ### Webpack
 
-1. [ ] compiles scss to file using `extract-text-webpack-plugin`
+1. [x] compiles scss to file using `extract-text-webpack-plugin`
 
 ### Laravel
 
  1. [ ] change the default namespace
- 2. [ ] make a controller
- 3. [ ] create a route and a view for the controller
- 4. [ ] cache and clear routes
- 5. [ ] make a model
- 6. [ ] make a migration
- 6. [ ] make a seeder
- 6. [ ] make another model with a one-to-many relationship with the first model. Specify the relationship on both models.
+ 2. [x] make a controller
+ 3. [x] create a route and a view for the controller
+ 4. [x] cache and clear routes
+ 5. [x] make a model
+ 6. [x] make a migration
+ 6. [x] make a seeder
+ 6. [x] make another model with a one-to-many relationship with the first model. Specify the relationship on both models.
  7. [ ] make an authentication scaffold. see the files it creates. require login on the page you created.
  3. [ ] make a command
  1. [ ] make an event listener
@@ -58,4 +58,4 @@ Some simple exercises to remember how to do each of these things. I copy-paste t
  1. [ ] Hook up redux and vuejs
  1. [ ] Use vuex with vue app
  1. [ ] Use vue-route with vue app
- 1. [ ] Set up webpack-dev-server to serve js/css
+ 1. [x] Set up webpack-dev-server to serve js/css
