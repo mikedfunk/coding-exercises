@@ -9,7 +9,7 @@ const extractSassLoader = ExtractTextPlugin.extract({
 const sassLoader = 'style-loader!css-loader!sass-loader';
 
 module.exports = function exp(env) {
-  const isProd = env && env.production;
+  const isProd = process.argv.indexOf('-p') !== -1;
   let exportme = {
     entry: ['babel-polyfill', './app'],
     output: {

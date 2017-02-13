@@ -16,6 +16,6 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --open --hot --inline",
-    "prod": "webpack -p --env.production"
+    "prod": "webpack -p"
   }
 }
