@@ -10,7 +10,7 @@ Some simple exercises to remember how to do each of these things. I copy-paste t
  1. [ ] loads scss through webpack js
 1. [ ] Create a react app from scratch (with .jsx and `react` preset) and serve it
 5. [ ] Create a vuejs app from scratch (with .vue and `vue-loader`) and serve it
-6. [ ] Use fugitive.vim to add, commit, and push a file change. Also git pull and git status.
+6. [x] Use fugitive.vim to add, commit, and push a file change. Also git pull and git status.
 
 ## Subtasks to try later
 
