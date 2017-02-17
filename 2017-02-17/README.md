@@ -26,7 +26,7 @@ Some simple exercises to remember how to do each of these things. I copy-paste t
 
 ### Laravel
 
- 1. [ ] change the default namespace
+ 1. [x] change the default namespace
  2. [x] make a controller
  3. [x] create a route and a view for the controller
  4. [x] cache and clear routes
@@ -40,7 +40,7 @@ Some simple exercises to remember how to do each of these things. I copy-paste t
  4. [ ] create a scheduled task to run daily at midnight
  5. [ ] create a logging middleware
  1. [ ] display a form
- 2. [ ] validate that form with a `FormRequest` class
+ 2. [x] validate that form with a `FormRequest` class
  1. [ ] setup passport authentication
  1. [ ] setup a client to authenticate with passport
  1. [ ] example google socialite login
