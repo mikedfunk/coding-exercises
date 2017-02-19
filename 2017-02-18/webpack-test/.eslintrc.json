@@ -1,10 +1,10 @@
 {
-  "rules": {
-    "no-new": "off"
-  },
-  "extends": "standard",
-  "plugins": [
-    "standard",
-    "promise"
-  ]
+    "extends": "standard",
+    "plugins": [
+        "standard",
+        "promise"
+    ],
+    "rules": {
+      "no-new": "off"
+    }
 }
