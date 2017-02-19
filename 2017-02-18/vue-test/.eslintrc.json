@@ -1,5 +1,8 @@
 {
     "extends": ["standard", "vue"],
+    "rules": {
+      "no-new": 0
+    },
     "plugins": [
         "standard",
         "promise"

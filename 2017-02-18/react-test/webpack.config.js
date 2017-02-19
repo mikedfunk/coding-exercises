@@ -20,5 +20,6 @@ module.exports = {
         enforce: 'pre'
       }
     ]
-  }
+  },
+  resolve: { extensions: ['.jsx', '.js'] }
 }
