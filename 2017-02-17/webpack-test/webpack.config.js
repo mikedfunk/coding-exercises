@@ -18,12 +18,12 @@ let exportme = {
   module: {
     rules: [
       {
-        test: /\.js*/,
+        test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
       },
       {
-        test: /\.scss*/,
+        test: /\.scss$/,
         exclude: /node_modules/,
         loader: isProd ? extractSassLoader : sassLoader
       }
