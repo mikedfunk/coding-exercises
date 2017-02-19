@@ -8,8 +8,8 @@ Some simple exercises to remember how to do each of these things. I copy-paste t
 5. [x] Create a hello world js app with a webpack 2 config that:
  1. [x] loads js modules and es2015 through babel
  1. [x] loads scss through webpack js
-1. [ ] Create a react app from scratch (with .jsx and `react` preset) and serve it
-5. [ ] Create a vuejs app from scratch (with .vue and `vue-loader`) and serve it
+1. [x] Create a react app from scratch (with .jsx and `react` preset) and serve it
+5. [x] Create a vuejs app from scratch (with .vue and `vue-loader`) and serve it
 6. [x] Use fugitive.vim to add, commit, and push a file change. Also git pull and git status.
 
 ## Subtasks to try later
