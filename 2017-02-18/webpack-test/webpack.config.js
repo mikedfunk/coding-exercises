@@ -2,12 +2,18 @@ const path = require('path')
 const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin')
 
 const isProd = process.argv.indexOf('-p') !== -1
-const sassLoader = 'style-loader!css-loader!sass-loader'
+
+const sassLoaders = [
+  { loader: 'style-loader', options: { sourceMap: true } },
+  { loader: 'css-loader', options: { sourceMap: true } },
+  { loader: 'sass-loader', options: { sourceMap: true } }
+]
 const sassFileLoader = ExtractTextWebpackPlugin.extract({
-  fallback: 'style-loader',
-  use: 'css-loader!sass-loader'
+  fallback: 'style-loader?sourceMap',
+  use: 'css-loader?sourceMap!sass-loader?sourceMap'
 })
 let exportme = {
+  devtool: 'source-map',
   entry: ['babel-polyfill', './app'],
   output: {
     filename: '[name].js?[hash]',
@@ -24,7 +30,7 @@ let exportme = {
       {
         test: /\.scss$/,
         exclude: /node_modules/,
-        loader: isProd ? sassFileLoader : sassLoader
+        use: isProd ? sassFileLoader : sassLoaders
       },
       {
         test: /\.js$/,
