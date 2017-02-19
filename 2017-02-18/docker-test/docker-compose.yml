@@ -1,0 +1,28 @@
+version: "2"
+services:
+  nginx:
+    image: nginx_mike
+    ports:
+      - "80:80"
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    volumes:
+      - ./code:/code
+  php:
+    image: php_mike
+    build:
+      context: ./php
+      dockerfile: Dockerfile
+    volumes:
+      - ./code:/code
+    environment:
+      ENV_DBGB_IDEKEY: mikedfunkxd
+  mysql:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: mypass
+      MYSQL_DATABASE: test
+    volumes:
+      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
+
