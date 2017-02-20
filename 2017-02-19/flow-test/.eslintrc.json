@@ -1,0 +1,7 @@
+{
+  "extends": ["standard", "standard-flow"],
+  "plugins": [
+    "standard",
+    "promise"
+  ]
+}
