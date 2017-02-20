@@ -2,13 +2,14 @@ Some simple exercises to remember how to do each of these things. I copy-paste t
 
 1. [ ] create a laravel app with composer and serve it.
 7. [ ] Open the tag selector in a tab 5x, in a split 5x, in a vsplit 5x
-2. [ ] create a codeceptjs test suite with nightmarejs.
+2. [x] create a codeceptjs test suite with nightmarejs.
 3. [ ] create a tasks migration, model, controller, view, seed, and practice creating a fake user with faker and tinker
 4. [ ] Create a docker-compose setup that runs nginx and php-fpm and serves a mounted directory and run it
+5. [x] Create a basic test example with mocha and chai. test file in es6.
 5. [x] Create a basic flow example that works with webpack, babel, eslint, and syntastic
-5. ~~[ ] Create a hello world js app with a webpack 2 config that:~~
- 1. ~~[ ] loads js modules and es2015 through babel~~
- 1. ~~[ ] loads scss through webpack js~~
+5. [ ] Create a hello world js app with a webpack 2 config that:
+ 1. [ ] loads js modules and es2015 through babel
+ 1. [ ] loads scss through webpack js
 1. [ ] Create a react app from scratch (with .jsx and `react` preset) and serve it
 5. [ ] Create a vuejs app from scratch (with .vue and `vue-loader`) and serve it
 6. [ ] Use fugitive.vim to add, commit, and push a file change. Also git pull and git status.
