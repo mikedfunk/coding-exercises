@@ -7,9 +7,5 @@ module.exports = () => {
     seeTheHeader () {
       this.see('Hello World')
     }
-
-    // Define custom steps here, use 'this' to access default methods of I.
-    // It is recommended to place a general 'login' function here.
-
   })
 }
