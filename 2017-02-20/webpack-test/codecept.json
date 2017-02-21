@@ -1,0 +1,16 @@
+{
+  "tests": "./features/*_test.js",
+  "timeout": 10000,
+  "output": "./features/output",
+  "helpers": {
+    "Nightmare": {
+      "url": "http://localhost:8081"
+    }
+  },
+  "include": {
+    "I": "./features/step_file.js"
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "webpack-test"
+}
