@@ -1,8 +1,8 @@
-/* global describe, it */
+/* global describe, it, context */
 import Person from '../src/Person'
 import {expect} from 'chai'
 describe('Feature: A person greets', () => {
-  describe('Scenario: A person greets successfully', () => {
+  context('Scenario: A person greets successfully', () => {
     it('Gets a persons greeting', () => {
       let person = new Person()
       const greeting = person.greet()
