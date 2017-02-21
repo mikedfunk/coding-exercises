@@ -1,8 +1,26 @@
 {
-  "dependencies": {
+  "devDependencies": {
     "babel-core": "^6.23.1",
     "babel-loader": "^6.3.2",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-polyfill": "^6.23.0",
     "babel-preset-latest": "^6.22.0",
+    "chai": "^3.5.0",
+    "codeceptjs": "^0.5.0",
+    "eslint": "^3.16.0",
+    "eslint-config-standard-flow": "^1.0.1",
+    "eslint-loader": "^1.6.1",
+    "flow": "^0.2.3",
+    "flow-bin": "^0.39.0",
+    "flow-typed": "^2.0.0",
+    "mocha": "^3.2.0",
+    "nightmare": "^2.9.1",
+    "proxyquire": "^1.7.11",
+    "sinon": "^1.17.7",
     "webpack": "^2.2.1"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --open --inline --hot",
+    "prod": "webpack -p"
   }
 }

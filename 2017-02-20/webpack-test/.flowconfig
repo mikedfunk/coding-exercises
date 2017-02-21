@@ -1,0 +1,8 @@
+[ignore]
+.*/node_modules/fbjs/.*
+.*/.git/.*
+[include]
+
+[libs]
+
+[options]

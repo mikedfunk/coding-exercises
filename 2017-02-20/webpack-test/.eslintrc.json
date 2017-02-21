@@ -1,7 +1,10 @@
 {
-    "extends": "standard",
+    "extends": ["standard", "standard-flow"],
     "plugins": [
         "standard",
         "promise"
-    ]
+    ],
+    "rules": {
+      "no-new": 0
+    }
 }
